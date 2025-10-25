@@ -51,15 +51,15 @@ echo "$servers" | while IFS= read -r entry; do
     # status change message
     if [ "$status" != "$prev_status" ]; then
         if [ "$status" = "offline" ]; then
-            send_tg "🚨 <b>$name</b> ($target) 掉线！"
+            send_tg "🚨 <b>$name</b> ($target) 離綫"
         else
-            send_tg "✅ <b>$name</b> ($target) 上线！"
+            send_tg "✅ <b>$name</b> ($target) 上綫"
         fi
     fi
 
     # IP change message
     if [ "$ip_now" != "$prev_ip" ] && [ -n "$prev_ip" ]; then
-        send_tg "⚠️ <b>$name</b> ($target) IP 变化：$prev_ip → $ip_now"
+        send_tg "⚠️ <b>$name</b> ($target) IP 變化：$prev_ip → $ip_now"
     fi
 
     # update status file
