@@ -15,7 +15,7 @@
 ### ① 下载项目
 
 ```sh
-curl -L -o tmp.zip https://github.com/on99darlin/vps_moniter_mini/archive/refs/heads/main.zip && mkdir -p monitor_mini && unzip -q tmp.zip -d monitor_mini && mv monitor_mini/vps_moniter_mini-main/* monitor_mini/ && rm -rf monitor_mini/vps_moniter_mini-main tmp.zip
+curl -L -o tmp.zip https://github.com/makemecoffee/vps_monitor_mini/archive/refs/heads/master.zip && mkdir -p monitor_mini && unzip -q tmp.zip -d monitor_mini && mv monitor_mini/vps_monitor_mini-master/* monitor_mini/ && rm -rf monitor_mini/vps_monitor_mini-master tmp.zip
 ```
 
 ### ② 修改配置文件
